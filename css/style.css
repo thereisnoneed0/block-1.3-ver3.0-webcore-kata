@@ -57,7 +57,7 @@ a {
   text-decoration: none;
   color: #7e7e82;
 }
-.btn-reset {
+.btn-general {
   padding: 0;
   border: none;
   background-color: transparent;
@@ -105,38 +105,65 @@ a {
   border-radius: 10px;
 }
 
-/*  HEADER HEADER rgb(251, 248, 248) HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER _____________________________________________________________________________________________________________*/
+/*  HEADER HEADER   HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER _____________________________________________________________________________________________________________*/
 .header {
-  max-width: 1200px;
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   border-bottom: 1px solid #d9fff5;
 }
+@media (min-width: 320px) {
+  .header__btn-call,
+  .header__btn-chat,
+  .header__btn-contact {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .header__btn-call,
+  .header__btn-chat,
+  .header__btn-contact {
+    display: initial;
+  }
+}
 
-.container_header {
+.header__leftBox {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 0 auto;
+  align-items: center;
 }
-.header__firstWrap {
+.header__rightBox {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
-.burger,
-.header__repairItem,
-.header__chekOutItem {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin: 24px 16px;
-  background-color: #ff3e79;
+.header__btn-burger,
+.header__btn-call,
+.header__btn-chat,
+.header__btn-contact,
+.header__btn-repair {
+  margin-right: 16px;
+}
+.header__btn-contact {
+  margin-right: 36px;
 }
 
-.header__burger {
+.header__btn-repair {
   position: relative;
 }
+.header__btn-repair::before {
+  content: "";
+  width: 2px;
+  height: 32px;
+  background-color: #eaeaea;
+  border-radius: 2px;
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: -20px;
+}
+
 button span {
   position: absolute;
   width: 18px;
@@ -226,7 +253,6 @@ button span {
 }
 @media (min-width: 1120px) {
   body {
-    max-width: 1440px;
     margin: 0 auto;
   }
   .section__service::after {
@@ -251,9 +277,7 @@ button span {
   .header__chekOutItem {
     margin: 24px 30px 24px 0;
   }
-  .main__container {
-    width: 769px;
-  }
+
   .section__secondContainer {
     display: flex;
   }
@@ -429,12 +453,22 @@ button span {
   letter-spacing: -0.20000000298023224px;
   text-align: left;
 }
+@media (min-width: 320px) {
+  .secondContainer__image {
+    background-size: cover;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .secondContainer__image {
+    height: 208px;
+    width: 360px;
 
+    border-radius: 6px;
+  }
+}
 /*   main media@@@@@@@@@@*/
 @media (min-width: 768px) {
-  .main__container {
-    width: 769px;
-  }
   .section__secondContainer {
     display: flex;
   }

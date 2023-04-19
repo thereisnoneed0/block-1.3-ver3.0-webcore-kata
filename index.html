@@ -10,43 +10,37 @@
   </head>
   <body>
     <header class="header">
-      <div class="container_header">
-        <div class="header__firstWrap">
-          <button class="header__burger burger btn-reset">
-            <span class="burger_span1"></span>
-            <span class="burger_span2"></span>
-            <span class="burger_span3"></span>
-          </button>
-
-          <!-- <span class="header__dividerFirst"></span> -->
-          <a href="#" class="header__logo">
-            <img src="./images/logo/Group.svg" alt="" />
-          </a>
-          <span class="header__divider"></span>
-        </div>
-        <div class="header__EmptyWrap">
-          <button class="header__callItem btn-reset empty-wrapper">
-            <img src="./images/call/call.svg" alt="" />
-          </button>
-          <button
-            class="header__chatItem btn-reset empty-wrapper header__ItemChat"
-          >
-            <img src="./images/chat/chat.svg" alt="" />
-          </button>
-          <button class="header__contactItem btn-reset empty-wrapper">
-            <img src="./images/contact/profile.svg" alt="" />
-          </button>
-        </div>
-        <div class="header__secondWrap">
-          <button class="header__repairItem btn-reset">
-            <img src="./images/repair/full/repair.svg" alt="" />
-          </button>
-          <button class="header__chekOutItem btn-reset">
-            <img src="./images/checkOut/checkstatus.svg" alt="" />
-          </button>
-        </div>
+      <div class="header__leftBox">
+        <button class="header__btn-burger btn-general">
+          <img
+            src="./images/burger/burger.svg"
+            alt=""
+            class="header__imgBurg"
+          />
+        </button>
+        <button class="logo btn-general">
+          <img src="./images/logo/Group.svg" alt="" />
+        </button>
+      </div>
+      <div class="header__rightBox">
+        <button class="header__btn-call btn-general">
+          <img src="./images/call/call.svg" alt="" />
+        </button>
+        <button class="header__btn-chat btn-general">
+          <img src="./images/chat/chat.svg" alt="" />
+        </button>
+        <button class="header__btn-contact btn-general">
+          <img src="./images/contact/profile.svg" alt="" />
+        </button>
+        <button class="header__btn-repair btn-general">
+          <img src="./images/repair/full/repair.svg" alt="" />
+        </button>
+        <button class="header__btn-check btn-general">
+          <img src="./images/checkOut/checkstatus.svg" alt="" />
+        </button>
       </div>
     </header>
+
     <main class="main">
       <div class="main__container">
         <section class="section">
@@ -123,9 +117,11 @@
                 </div>
               </div>
 
-              <div class="secondContainer__image">
-                <img src="./images/jpeg/main.jpg" alt="" />
-              </div>
+              <img
+                class="secondContainer__image"
+                src="./images/jpeg/main.jpg"
+                alt=""
+              />
             </div>
           </div>
         </section>
