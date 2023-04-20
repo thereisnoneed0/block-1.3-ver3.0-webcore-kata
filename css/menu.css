@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url(../fonts/TTLakes-Italic.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url(../fonts/TTLakes-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-variant: normal;
+}
+@font-face {
+  font-family: "TT LakesRegular";
+  src: url(../fonts/TTLakes-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-variant: normal;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url(../fonts/TTLakes-Medium.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-variant: normal;
+}
+list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #7e7e82;
+}
+.btn-general {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.body {
+  background-color: antiquewhite;
+  width: 768px;
+}
+
+.section {
+  background-color: #79d0b7;
+  width: 320px;
+  height: 1024px;
+}
+
+.section__header {
+}
+.header {
+}
+.header__btn-burger-closed {
+}
+.btn-general {
+}
+.header__imgClosedBurger {
+}
+.logo {
+}
+.header__btn-search {
+}
+.section__main {
+}
+.section__item {
+}
+.section__footer {
+}
+.footer {
+}
+.footer__icons {
+}
+.header__btn-call {
+}
+.header__btn-chat {
+}
+.header__btn-contact {
+}
+.footer__mail {
+}
+.footer__tel {
+}
+.footer__languageIcons {
+}
+.footer__btn-Language {
+}
+.footer__btn-active {
+}
