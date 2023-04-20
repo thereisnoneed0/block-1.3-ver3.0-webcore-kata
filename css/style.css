@@ -325,6 +325,7 @@ a {
   .section__btn-check {
     display: flex;
     margin-right: 32px;
+    align-items: center;
   }
   .image-btn-repair,
   .image-btn-check {
