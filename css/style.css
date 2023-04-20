@@ -199,7 +199,7 @@ a {
   body {
     margin: 0 auto;
   }
-  .section__service::after {
+  .main__service::after {
     display: none;
   }
 }
@@ -280,7 +280,7 @@ a {
   padding: 0 16px;
   background: #f8f8f8;
 }
-.section__service {
+.main__service {
   background: #f8f8f8;
 }
 .section__wrapperForLS {
@@ -333,7 +333,7 @@ a {
     margin-left: 8px;
   }
 }
-.section_h1 {
+.section__h1 {
   position: relative;
   margin: 0;
   font-family: TT Lakes;
@@ -408,17 +408,17 @@ a {
   margin: 0;
 }
 @media (min-width: 320px) {
-  .parag_span {
+  .parag__span {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  .parag_span {
+  .parag__span {
     display: initial;
   }
 }
 @media (min-width: 1120px) {
-  .parag_span {
+  .parag__span {
     display: initial;
   }
 }
@@ -444,13 +444,13 @@ a {
   margin-bottom: 16px;
 }
 @media (min-width: 320px) {
-  .secondContainer__image {
+  .section__image {
     background-size: cover;
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  .secondContainer__image {
+  .section__image {
     height: 208px;
     width: 360px;
 
@@ -468,11 +468,11 @@ a {
     height: 402px;
   }
 
-  .secondContainer__image {
+  .section__image {
     margin: 0;
     padding: 0;
   }
-  .secondContainer__image img {
+  .section__image img {
     width: 360px;
     height: 208px;
     border-radius: 6px;
@@ -522,24 +522,24 @@ a {
   .parag__readMore::before {
     top: 8px;
   }
-  .secondContainer__image {
+  .section__image {
     margin: 0;
   }
-  .secondContainer__image img {
+  .section__image img {
     width: 531px;
     height: 310px;
     border-radius: 6px;
   }
 }
 @media (min-width: 768px) {
-  .secondContainer__image {
+  .section__image {
     margin: 0;
     width: 360px;
     height: 208px;
   }
 }
 @media (min-width: 1120px) {
-  .secondContainer__image {
+  .section__image {
     margin: 0;
     width: 530px;
     height: 307px;
