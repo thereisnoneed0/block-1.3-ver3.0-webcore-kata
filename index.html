@@ -42,89 +42,61 @@
     </header>
 
     <main class="main">
-      <div class="main__container">
-        <section class="section">
-          <div class="section__service">
-            <div class="section__wrapperForLS">
-              <div class="section__titleWrapper titleWrapper">
-                <div class="section__title">
-                  <h1 class="section_h1">Услуги и&nbsp;сервисы</h1>
-                </div>
-                <div class="section__LS-iconsWrapper">
-                  <div class="titleWrapper__repair btn-reset">
-                    <div class="titleWrapper__repair LS-iconsWrapper">
-                      <p class="titleWrapper__repairText">Оставить заявку</p>
-                      <img src="./images/repair/full/repair.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="header__checkOut0 btn-reset">
-                    <div class="header__checkOut0 LS-iconsWrapper">
-                      <p class="titleWrapper_checkOutText">Статус ремонта</p>
-                      <img src="./images/checkOut/checkstatus.svg" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="section__fader"></div> -->
-              <div class="section__serviceIcons"></div>
-            </div>
-            <div class="section__items service">
-              <div class="service__items1 service__items">
-                <a href="#">Ремонтируемые бренды</a>
-              </div>
-              <div class="service__items2 service__items">
-                <a href="#">Ремонтируемые устройства</a>
-              </div>
-              <div class="service__items3 service__items">
-                <a href="#">Дополнительные услуги</a>
-              </div>
-              <div class="service__items4 service__items">
-                <a href="#">Цены на услуги</a>
-              </div>
-              <div class="service__items5 service__items">
-                <a href="#">Адреса сервисных центров</a>
-              </div>
-              <div class="service__items6 service__items">
-                <a href="#">Специальные цены</a>
-              </div>
-              <div class="service__items7 service__items">
-                <a href="#">Отзывы</a>
-              </div>
-            </div>
-            <div class="section__secondContainer secondContainer">
-              <div class="section__Paragraph parag">
-                <p class="parag__text">
-                  Мы являемся авторизованным сервисным центром по ремонту
-                  техники Dell. Только у нас вы можете отремонтировать свой
-                  ноутбук Dell с официальной гарантией производителя.
-                </p>
-                <p class="parag__text2">
-                  Мы успешно работаем с 1992 года и заслужили репутацию
-                  надежного партнера что подтверждает большое количество
-                  постоянных клиентов. Мы гордимся тем, что к нам обращаются по
-                  рекомендациям и, в свою очередь, советуют нас родным и
-                  близким.
-                </p>
-                <p class="parag__text3"></p>
-
-                <div class="parag__readMore-wrapper">
-                  <!-- <div class="parag__arrows">
-                    <img src="./images/arrows/icon.svg" alt="" />
-                  </div> -->
-                  <button class="parag__readMore btn-reset">
-                    Читать далее
-                  </button>
-                </div>
-              </div>
-
+      <div class="section__service">
+        <div class="section__wrapperForLS">
+          <h1 class="section_h1">Услуги и&nbsp;сервисы</h1>
+          <div class="section__buttons-Wrapper">
+            <button class="section__btn-repair btn-general">
+              <p>Оставить заявку</p>
               <img
-                class="secondContainer__image"
-                src="./images/jpeg/main.jpg"
+                class="image-btn-repair"
+                src="./images/repair/full/repair.svg"
                 alt=""
               />
-            </div>
+            </button>
+            <button class="section__btn-check btn-general">
+              <p>Статус ремонта</p>
+              <img
+                class="image-btn-check"
+                src="./images/checkOut/checkstatus.svg"
+                alt=""
+              />
+            </button>
           </div>
-        </section>
+        </div>
+        <div class="section__items">
+          <a href="#" class="section__iteM section__iteM--active"
+            >Ремонтируемые бренды</a
+          >
+          <a href="#" class="section__iteM">Ремонтируемые устройства</a>
+          <a href="#" class="section__iteM">Цены на услуги</a>
+          <a href="#" class="section__iteM">Адреса сервисных центров</a>
+          <a href="#" class="section__iteM">Специальные цены</a>
+          <a href="#" class="section__iteM">Отзывы</a>
+        </div>
+        <div class="section__description-img">
+          <div class="section__Paragraph parag">
+            <p class="parag__text">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.<br />
+              <br /><span class="parag_span">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким.
+              </span>
+            </p>
+
+            <button class="parag__readMore btn-general">Читать далее</button>
+          </div>
+
+          <img
+            class="secondContainer__image"
+            src="./images/jpeg/main.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </main>
   </body>
