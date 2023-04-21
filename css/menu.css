@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url(../fonts/TTLakes-Italic.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url(../fonts/TTLakes-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-variant: normal;
+}
+@font-face {
+  font-family: "TT LakesRegular";
+  src: url(../fonts/TTLakes-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-variant: normal;
+}
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url(../fonts/TTLakes-Medium.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-variant: normal;
+}
+list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #7e7e82;
+}
+.btn-general {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.body {
+  background-color: #fff;
+  width: 768px;
+  height: 1024px;
+}
+
+.section {
+  background-color: #ffffff;
+  width: 320px;
+  height: 1024px;
+  box-shadow: 10px 0 45px 6px #c4c6d7;
+}
+
+.section__header {
+}
+.header {
+  display: flex;
+  padding: 23px 24px;
+}
+.header__btn-burger-closed {
+  margin-right: 16px;
+}
+.btn-general {
+}
+.header__imgClosedBurger {
+}
+.logo {
+}
+.header__btn-search {
+  margin-left: auto;
+}
+.section__main {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 24px;
+  margin-bottom: 265px;
+}
+.section__item {
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  color: #1b1c21;
+}
+.section__item {
+  margin-bottom: 32px;
+}
+.section__item:first-child {
+  position: relative;
+}
+.section__item:first-child::before {
+  content: "";
+  width: 10px;
+  height: 40px;
+  background-color: #41f6d7;
+  position: absolute;
+  top: -7px;
+  left: -29px;
+  border-radius: 5px;
+}
+.section__item:last-child {
+  margin-bottom: 0px;
+}
+.section__item-active {
+  color: #7e7e82;
+}
+.section__footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px 32px 24px;
+}
+.footer {
+}
+.footer__icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.footer__btn-call {
+  margin-right: 16px;
+}
+.footer__btn-chat {
+  margin-right: 16px;
+}
+.header__btn-contact {
+}
+.footer__mail {
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  color: #1b1c21;
+}
+.footer__mail {
+  margin-bottom: 12px;
+}
+.footer__tel {
+  font-family: TT Lakes;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6000000238418579px;
+  text-align: left;
+  color: #1b1c21;
+}
+.footer__tel {
+  margin-bottom: 40px;
+}
+.footer__languageIcons {
+  display: flex;
+  align-items: center;
+}
+.footer__btn-Language {
+  display: flex;
+  margin-right: 7px;
+}
+.footer__btn-active {
+}
+.footer__imgEN {
+  align-self: center;
+}
+
+.section__item {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.section__item:hover {
+  opacity: 0.5;
+}
+/* a:hover {
+  opacity: 0.1;
+} */
+.footer__btn-Language:hover {
+  transform: translatey(15px) rotate(360deg);
+}
+.animation-btn {
+  transition: all 0.3s ease-in-out;
+}
+.animation-btn:hover .header__imgClosedBurger {
+}
+.animation-btn:hover .header__imgClosedBurger {
+  animation-name: rotateIcon, move1;
+  animation-duration: 5s, 3s;
+}
+
+@keyframes rotateIcon {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes move1 {
+  100% {
+    transform: translateY(8px);
+  }
+}
+
+.animation-btn:hover .footer__bottom-icon {
+  animation-name: rotateIcon2, move2;
+  animation-duration: 3s, 3s;
+}
+@keyframes rotateIcon {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes move1 {
+  100% {
+    transform: translatey(4px) scale(1.2);
+  }
+}
+@keyframes rotateIcon2 {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes move2 {
+  100% {
+    transform: translate(4px, -15px) scale(1.2);
+    opacity: 0.8;
+  }
+}
+.logo {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+
+  border-radius: 5px;
+}
+
+.logo:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  transition: transform 0.8s ease-out;
+}
+
+.logo:hover:after {
+  transform: translate(-50%, -50%) scale(15);
+}
