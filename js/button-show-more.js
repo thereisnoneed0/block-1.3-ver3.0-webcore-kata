@@ -3,6 +3,15 @@ const btnShowMore = document.getElementById("show_more")
 
 let btnIsActive = false
 
+!(function () {
+  if (window.innerWidth > 767 && window.innerWidth < 1124) {
+    hideSlidesByNumber(slides, 6)
+  } else if (window.innerWidth > 1123) {
+    showSlidesOnLarge(slides, 8)
+    hideSlidesByNumber(slides, 8)
+  }
+})()
+
 toggleSlidesCast(false)
 window.addEventListener("resize", () => toggleSlidesCast(false))
 btnShowMore.addEventListener("click", function () {
